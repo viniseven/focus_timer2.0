@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    gap: 19.2rem;
+    padding: 0 2rem;
+}
+
+.timer{
+    text-align: center;
+    margin-top: 5.8rem;
+}
+
+.timer span{
+    font-size: 12.6rem;
+}
+
+.controls-timer{
+    margin-top: 1.7rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.controls-timer button{
+    border: none;
+    background-color: white;
+}
+
+.controls-timer button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.hide{
+    display: none;
+}
+
+.controls-sound{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 3.2rem
+}
+
+.controls-sound button:focus{
+    background-color: #02799D;
+}
+
+.controls-sound path{
+    fill: #323238;
+}
+
+.controls-sound button{
+    padding: 4.8rem;
+    
+    border-radius: 24px;
+    border: none;
+    
+    background: #E1E1E6;
+}
+
+.controls-sound button:hover{
+    cursor: pointer;
+}
+
+@media (max-width: 898px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
