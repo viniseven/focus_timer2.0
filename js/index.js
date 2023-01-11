@@ -19,7 +19,7 @@ let seconds
 let timerTimeOut
 
 function resetTimer(){
-    minutesTimer.textContent = newMinutes
+    minutesTimer.textContent = String(newMinutes).padStart(2, "0")
     seconds = 0 
     secondsTimer.textContent = String(seconds).padStart(2, "0")
 }
@@ -41,13 +41,16 @@ function countdown(){
      
 }
 
-function playTimer(){
+function playTimer(){    
+    if(!newMinutes){
+        alert('Insira algum tempo para começar')
+    }else{ 
     buttonPause.classList.remove('hide')
     buttonPlay.classList.add('hide')
     buttonSet.classList.add('hide')
     buttonStop.classList.remove('hide')
-
     countdown()
+    }
 }
 
 function pauseTimer(){
