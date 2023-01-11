@@ -12,7 +12,11 @@ const {
     buttonStop,
     buttonSet,
     buttonAddMinutes,
-    buttonRemoveMinutes
+    buttonRemoveMinutes,
+    buttonSoundForest,
+    buttonSoundRain,
+    buttonSoundShop,
+    buttonSoundFire
 } = elements
 
 const controls = Controls({
@@ -21,7 +25,11 @@ const controls = Controls({
     buttonSet,
     buttonStop,
     buttonAddMinutes,
-    buttonRemoveMinutes
+    buttonRemoveMinutes,
+    buttonSoundForest,
+    buttonSoundRain,
+    buttonSoundShop,
+    buttonSoundFire
 })
 
 const timer = Timer({
