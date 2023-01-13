@@ -1,7 +1,7 @@
 import { elements } from "./elements.js";
 
 export default function({
-    controls, timer
+    controls, timer, sound
 }){
     elements.buttonPlay.addEventListener('click', () =>{
         controls.playTimer()
@@ -41,4 +41,21 @@ export default function({
     elements.buttonRemoveMinutes.addEventListener('click', () => {
         timer.removeMinutesTimer()
     })
+
+    elements.buttonSoundForest.addEventListener('click', () => {
+        sound.soundForest()
+    })
+
+    elements.buttonSoundRain.addEventListener('click', () => {
+        sound.soundRain()
+    })
+
+    elements.buttonSoundShop.addEventListener('click', () => {
+        sound.soundShop()
+    })
+
+    elements.buttonSoundFire.addEventListener('click', () => {
+        sound.soundFire()
+    })
+
 }

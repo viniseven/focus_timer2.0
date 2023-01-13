@@ -9,10 +9,12 @@ const buttonAddMinutes = document.querySelector('.addMinutes')
 const buttonRemoveMinutes = document.querySelector('.removeMinutes')
 
 
-const buttonSoundForest = document.querySelector('soundForest')
-const buttonSoundRain = document.querySelector('soundRain')
-const buttonSoundShop = document.querySelector('soundShop')
-const buttonSoundFire = document.querySelector('soundFire')
+const buttonSoundForest = document.querySelector('.sound-forest')
+const buttonSoundRain = document.querySelector('.sound-rain')
+const buttonSoundShop = document.querySelector('.sound-shop')
+const buttonSoundFire = document.querySelector('.sound-fire')
+
+
 
 
 export const elements = {

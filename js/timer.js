@@ -1,3 +1,7 @@
+import Sounds from './sounds.js'
+
+const sound = Sounds()
+
 export default function Timer({
     minutesTimer,
     secondsTimer
@@ -15,6 +19,13 @@ function countdown(){
     timerTimeOut = setTimeout(function(){
        let seconds = Number(secondsTimer.textContent)
        let minutes = Number(minutesTimer.textContent)
+
+       if(minutes == 0 && seconds == 0){
+        resetTimer()
+        updateTimer()
+        sound.soundAlarm()
+        return
+       }
        
        if(seconds == 0){
            seconds = 60

@@ -54,6 +54,14 @@ body{
     transition: 1s;
 }
 
+.controls-sound button svg{
+    fill: #323238;
+}
+
+.icon-forest .active-color{
+    fill: #FFFFFF;
+}
+
 .hide{
     display: none;
 }
@@ -66,10 +74,6 @@ body{
 
 .controls-sound button:focus{
     background-color: #02799D;
-}
-
-.controls-sound path{
-    fill: #323238;
 }
 
 .controls-sound button{
