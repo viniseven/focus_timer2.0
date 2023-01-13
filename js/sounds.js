@@ -7,6 +7,10 @@ const shopSound = new Audio('https://github.com/devgustavosantos/focus-timer-dar
 const fireSound = new Audio('https://github.com/devgustavosantos/focus-timer-dark-mode/blob/main/assets/sound/fire-pit.wav?raw=true')
 const alarmClock = new Audio('https://github.com/devgustavosantos/focus-timer-dark-mode/blob/main/assets/sound/alert.mp3?raw=true')
 
+const volForest = document.querySelector('.volForest')
+const volRain = document.querySelector('.volRain')
+const volShop = document.querySelector('.volShop')
+const volFire = document.querySelector('.volFire')  
 
 function soundForest(){
     forestSound.play()
@@ -44,6 +48,27 @@ function soundAlarm(){
     alarmClock.play()
     forestSound.loop = true
 }
+
+volForest.addEventListener('change', function(){
+    forestSound.volume = this.value
+})
+
+volRain.addEventListener('change', function(){
+    rainSound.volume = this.value
+})
+
+volShop.addEventListener('change', function(){
+    shopSound.volume = this.value
+})
+
+volFire.addEventListener('change', function(){
+    fireSound.volume = this.value
+})
+
+
+
+
+
 
 return{
     soundForest,

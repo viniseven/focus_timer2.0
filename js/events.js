@@ -1,5 +1,6 @@
 import { elements } from "./elements.js";
 
+
 export default function({
     controls, timer, sound
 }){
@@ -57,5 +58,4 @@ export default function({
     elements.buttonSoundFire.addEventListener('click', () => {
         sound.soundFire()
     })
-
 }
