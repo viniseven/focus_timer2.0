@@ -66,10 +66,6 @@ volFire.addEventListener('change', function(){
 })
 
 
-
-
-
-
 return{
     soundForest,
     soundRain,

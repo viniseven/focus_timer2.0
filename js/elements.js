@@ -14,9 +14,25 @@ const buttonSoundRain = document.querySelector('.sound-rain')
 const buttonSoundShop = document.querySelector('.sound-shop')
 const buttonSoundFire = document.querySelector('.sound-fire')
 
+const buttonDarkMode = document.querySelector('.light-mode')
+const buttonLightMode = document.querySelector('.dark-mode')
+
+const theme = document.querySelector('.page')
+
+const iconPlay = document.querySelector('.play svg path')
+const iconPause = document.querySelector('.pause svg path')
+const iconStop = document.querySelector('.stop svg path')
+const iconSet = document.querySelector('.set svg path')
+const iconAddMin = document.querySelector('.addMinutes svg path')
+const iconRemMin = document.querySelector('.removeMinutes svg path')
+
+const iconForest = document.querySelector('.icon-forest')
+const iconRain = document.querySelector('.icon-rain')
+const iconShop = document.querySelector('.icon-shop')
+const iconFire = document.querySelector('.icon-fire')
 
 
-
+const colorTimer = document.querySelector('.timer')
 
 
 export const elements = {
@@ -31,5 +47,20 @@ export const elements = {
     buttonSoundForest,
     buttonSoundRain,
     buttonSoundShop,
-    buttonSoundFire
+    buttonSoundFire,
+    buttonDarkMode,
+    buttonLightMode,
+    theme,
+    iconPlay,
+    iconPause,
+    iconStop,
+    iconStop,
+    iconSet,
+    iconAddMin,
+    iconRemMin,
+    iconForest,
+    iconRain,
+    iconShop,
+    iconFire,
+    colorTimer
 }

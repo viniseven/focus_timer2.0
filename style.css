@@ -14,11 +14,29 @@
 body{
     width: 100vw;
     height: 100vh;
-    
-    display: flex;
-    justify-content: center;
-    
-    align-items: center;
+    margin: 0 auto;
+}
+
+.controls-mode{
+    position: fixed;
+    top: 10rem;
+    right: 10rem;
+}
+
+.controls-mode button{
+    background: none;
+    border: none;
+}
+
+.controls-mode button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.page{
+    display: grid;
+    place-items: center;
+    height: 100vh;
 }
 
 .container{

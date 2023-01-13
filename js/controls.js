@@ -2,10 +2,10 @@ export default function Controls({
     buttonPlay,
     buttonPause,
     buttonStop,
-    buttonSet
+    buttonSet,
+    buttonDarkMode,
+    buttonLightMode  
 }){
-
-
 
 function playTimer(){
     buttonPlay.classList.add('hide')
@@ -42,11 +42,17 @@ function getMinutes(){
     return newMinutes
 }
 
+function toggleMode(){
+    buttonDarkMode.classList.toggle('hide')
+    buttonLightMode.classList.toggle('hide')
+}
+
     return{
         playTimer,
         pauseTimer,
         reset,
         stopTimer,
-        getMinutes
+        getMinutes,
+        toggleMode
     } 
 }
